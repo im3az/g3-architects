@@ -21,6 +21,13 @@
 }
 
 
+.primary-description {
+    color: #727272;
+    margin-bottom: 2rem;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 /* Header related styles */
 
 header {
@@ -73,48 +80,12 @@ nav li a {
     margin-bottom: 20px;
 }
 
-.banner-description {
-    color: #727272;
-    margin-bottom: 20px;
-
-}
 
 .banner img {
     margin-top: 20px;
     width: 100%;
 }
 
-
-
-/* Responsive media queries */
-/* mobile devices or small devices */
-
-@media screen and (max-width: 576px) {
-    header {
-        padding: 20px;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-}
-
-/* tablet or medium devices */
-
-@media screen and (min-width:576px) and (max-width:960px) {
-    header {
-        padding: 50px;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    .banner-title {
-        margin-top: 10px;
-    }
-}
 
 /* main section styles */
 
@@ -145,7 +116,7 @@ main {
 
 .teams-title {
     font-size: 2.8rem;
-    margin-bottom: 23px;
+    margin-bottom: 1.5rem;
 }
 
 .teams-description {
@@ -163,4 +134,47 @@ main {
 .teams-title .text-features {
     color: #FF900E;
     font-weight: 700;
+}
+
+
+
+
+/* Responsive media queries */
+/* mobile devices or small devices */
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav,
+    .teams-container 
+    {
+        flex-direction: column;
+    }
+    
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+/* tablet or medium devices */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav, .teams-container {
+        flex-direction: column;
+    }
+
+    .banner-title {
+        margin-top: 10px;
+    }
 }
