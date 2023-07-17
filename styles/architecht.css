@@ -189,8 +189,18 @@ main {
     margin-bottom: 24px;
 }
 
+.sponsors-img-container{
+    margin-top: 50px;
+    display: flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
 
+.sponsors-img-container img {
+    width: 165px;
 
+}
 
 /* Responsive media queries */
 
@@ -203,7 +213,8 @@ main {
 
     nav,
     .teams-container,
-    .facts-card-container
+    .facts-card-container,
+    .sponsors-img-container
     {
         flex-direction: column;
     }
@@ -230,7 +241,9 @@ main {
     }
 
     nav,
-    .teams-container {
+    .teams-container,
+    .sponsors-img-container 
+    {
         flex-direction: column;
     }
 
